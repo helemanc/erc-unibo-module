@@ -1,0 +1,7 @@
+{
+    "model_name": "emoberta",
+    "pretained_model_name": "roberta-large",
+    "json_input_file_path": "debug-files/dialogue_input.json",
+    "json_output_file_path": "debug-files/dialogue_output.json",
+    "url_weights_emoberta": "https://drive.google.com/u/0/uc?id=1OLY7LjJMLD0MVnYyphzexqCiobH_aGHs"
+}

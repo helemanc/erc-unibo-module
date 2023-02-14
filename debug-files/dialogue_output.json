@@ -1,0 +1,1 @@
+{"model_used": "roberta-large", "context": "Bye Bro", "utterance": "bybye", "emotion_prediction": {"neutral": "0.4757596", "anger": "0.0785653", "disgust": "0.0475484", "fear": "0.0407957", "joy": "0.1239387", "sadness": "0.1787453", "surprise": "0.054647"}}

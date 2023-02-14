@@ -12,8 +12,12 @@ build/
 develop-eggs/
 dist/
 downloads/
-eggs/
-.eggs/
+.ipynb_checkpoints/EmotionDetection_Tests-checkpoint.ipynb
+weights/last_run/checkpoint
+weights/last_run/last_run.data-00000-of-00001
+weights/last_run/last_run.index
+unibo-module/models/emoberta/weights.h5
+
 lib/
 lib64/
 parts/
@@ -127,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+models/emoberta/weights.h5
