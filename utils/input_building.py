@@ -5,15 +5,14 @@ import models
 #from emoberta import model
 
 # variables 
-current_utterance_field  = 'user-turn'
-context_utterance_field = 'agent-turn'
+
 # MODELS_MAPPING = {
 #     'emoberta': model.Roberta,
 #     #'setfit': models.setfit.model.SetFit,
 # }
 
 
-def input_processing(model, json_file):
+def input_processing(model, json_file, current_utterance_field  = 'user-turn', context_utterance_field = 'agent-turn'):
     """
     Process the input and return the model input
     
@@ -27,7 +26,7 @@ def input_processing(model, json_file):
         
     """
 
-    current_utterance, context_utterance = read_json(json_file)
+    current_utterance, context_utterance = read_json(json_file, current_utterance_field, context_utterance_field)
     proc_current_utterance = preprocessing_pipeline(current_utterance)
     proc_context_utterance = preprocessing_pipeline(context_utterance)
     #model_input = generate_input(proc_current_utterance, proc_context_utterance, model)
@@ -38,7 +37,7 @@ def input_processing(model, json_file):
 
 
 
-def read_json(json_file, user_turn_field=current_utterance_field, agent_turn_field=context_utterance_field): 
+def read_json(json_file, user_turn_field, agent_turn_field): 
     """
     Read the json file and return the current utterance and the context utterance
 
