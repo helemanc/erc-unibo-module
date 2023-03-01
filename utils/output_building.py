@@ -30,3 +30,5 @@ def generate_output(emotion_prediction, output_path, modelid, utterance, context
     print(output)
     with open(output_path, 'w') as f:
         json.dump(output, f)
+    
+    return output
